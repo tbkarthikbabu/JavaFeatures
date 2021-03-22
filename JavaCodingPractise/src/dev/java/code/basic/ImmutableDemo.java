@@ -1,5 +1,14 @@
 package dev.java.code.basic;
 
+/**
+ * 
+ * To make a class as Immutable, Need to add the class as final
+ * 
+ * final class cannot be override and unchanged
+ * 
+ * @author karth
+ *
+ */
 public class ImmutableDemo {
 
 	public static void main(String[] args) {

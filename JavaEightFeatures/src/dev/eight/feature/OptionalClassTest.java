@@ -10,7 +10,7 @@ public class OptionalClassTest {
 		arr[0] = "ONE";
 		arr[1] = "TWO";
 
-		Optional<String> chkNull = Optional.ofNullable(arr[1]);
+		Optional<String> chkNull = Optional.ofNullable(arr[5]);
 
 		if (chkNull.isPresent()) {
 			System.out.println(arr[1].toLowerCase());

@@ -7,7 +7,7 @@ package dev.eight.feature.lambda;
  */
 public class FnInterfaceTest {
 
-	// Functional Interface inside the class and by defaultly its abstract
+	// Functional Interface inside the class and by-default its abstract
 	interface FunInter1 {
 		int operation(int x, int y);
 	}
@@ -16,15 +16,15 @@ public class FnInterfaceTest {
 		void sayMessgae(String msg);
 	}
 
-	// Method of the normal class and pass the abstract method implementation using
-	// lambda expr and it will vary the implementation logic at run time
+	// Method of the normal class and pass the reference of the functional interface
 	int operate(int x, int y, FunInter1 fun1) {
 		return fun1.operation(x, y);
 	}
 
 	public static void main(String[] args) {
 
-		//
+		// funtional interface implementation logic, add the reference based on the
+		// logic
 		FunInter1 add = (x, y) -> x + y;
 
 		FunInter1 multiple = (x, y) -> x * y;

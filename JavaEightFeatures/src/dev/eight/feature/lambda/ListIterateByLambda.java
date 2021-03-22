@@ -13,17 +13,21 @@ public class ListIterateByLambda {
 	public static void main(String[] args) {
 
 		List<Integer> lt = new ArrayList<Integer>();
-		
+
 		lt.add(1);
 		lt.add(2);
 		lt.add(3);
 		lt.add(4);
 		lt.add(5);
 
+		// list out the list elements using the forEach method
 		lt.forEach((x) -> System.out.println(x));
-				
-		// getting the even integer uasing the if condition in lambda expr
-		lt.forEach( x -> { if (x%2==0) System.out.println(x); } );
-		
+
+		// getting the even integer using the if condition in lambda expr
+		lt.forEach(x -> {
+			if (x % 2 == 0)
+				System.out.println(x);
+		});
+
 	}
 }
