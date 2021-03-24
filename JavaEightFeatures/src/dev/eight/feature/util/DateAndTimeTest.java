@@ -1,4 +1,4 @@
-package dev.eight.feature;
+package dev.eight.feature.util;
 
 import java.time.LocalDate;
 import java.time.LocalDateTime;
@@ -7,7 +7,7 @@ import java.time.format.DateTimeFormatter;
 
 /**
  * 
- * LocalDate is final and immuable class and makes it thread-safe
+ * LocalDate is final and immutable class and makes it thread-safe
  * 
  * @author karth
  *

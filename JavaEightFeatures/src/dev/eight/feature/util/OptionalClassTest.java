@@ -1,4 +1,4 @@
-package dev.eight.feature;
+package dev.eight.feature.util;
 
 import java.util.Optional;
 
