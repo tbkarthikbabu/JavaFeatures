@@ -1,4 +1,4 @@
-package dev.collection.framework;
+package dev.collection.framework.basic;
 
 import java.util.HashMap;
 import java.util.Map.Entry;
@@ -7,17 +7,19 @@ public class MapWithHashCodeAndEquals {
 
 	public static void main(String[] args) {
 
-		HashMap<Dog, Integer> hm = new HashMap();
-
+		HashMap<Dog, Integer> hm = new HashMap<Dog, Integer>();
 		hm.put(new Dog("White"), 10);
 		hm.put(new Dog("Blak"), 12);
-		hm.put(new Dog("White"), 10);
+		hm.put(new Dog("White"), 20);
 		hm.put(new Dog("Red"), 10);
 
-		// white cat added twice due to not having the hashcode and equals method to
-		// identity the Cat objects with same name
+		// if not override the hashCode and equals method in Dog class, The two "White"
+		// Dog object are stored into HashMap
 
-		for (Entry entry : hm.entrySet()) {
+		// if override the hashCode and equals method in Dog class, the latest/new one
+		// of "White" dog object is stored and override the dog object
+
+		for (Entry<?, ?> entry : hm.entrySet()) {
 			System.out.println(entry.getKey().toString() + "," + entry.getValue());
 		}
 	}
@@ -61,7 +63,5 @@ class Dog {
 			return false;
 		return true;
 	}
-
-	
 
 }
