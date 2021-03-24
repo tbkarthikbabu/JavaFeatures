@@ -1,19 +1,21 @@
 package dev.collection.framework.internallyworks;
 
-import java.util.Collection;
 import java.util.HashSet;
+import java.util.Set;
 
 /**
  * 
- * Hashset internall works like HashMap
+ * Internally: HashSet internally works like HashMap because of hashSet
+ * constructor create object of the HashMap.
  * 
- * it checks the element PRESENT or NOT when calling add method, add method
- * internall calls PUT method of HashMap and hashSet construcotr created the
- * object of HashMap
+ * i.e. public HashSet() { map = new HashMap<>(); }
  * 
- * public HashSet() { map = new HashMap<>(); }
+ * Not allow the duplicate: Removes the duplicate entry/objects by using the
+ * checks the element PRESENT or NOT. When calling add method, Add method
+ * internally calls PUT method of HashMap, if object is PRESENT, it wont be
+ * added again.
  * 
- * public boolean add(E e) { return map.put(e, PRESENT)==null; }
+ * i.e. public boolean add(E e) { return map.put(e, PRESENT)==null; }
  * 
  * @author karth
  * 
@@ -23,8 +25,7 @@ public class HashSetInternallyWorks {
 
 	public static void main(String[] args) {
 
-		Collection<String> set = new HashSet();
-
+		Set<String> set = new HashSet();
 		set.add("Karthi");
 		set.add("Vinod");
 		set.add("Karthi");
