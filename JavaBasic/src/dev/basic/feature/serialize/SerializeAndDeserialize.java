@@ -26,9 +26,6 @@ import java.io.ObjectOutputStream;
  * <li>4. Constructor of object is never called when an object is deserialized.
  * <li>5. Associated objects must be implementing Serializable interface.
  * 
- * 
- * @author karth
- *
  */
 class SerializedClass implements java.io.Serializable {
 

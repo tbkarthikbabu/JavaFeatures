@@ -51,10 +51,6 @@ import java.io.Serializable;
  * during serialization process.This variable will be loaded with current value
  * defined in the class during deserialization.
  * 
- * 
- * 
- * @author karth
- *
  */
 class SerializeEmp implements Serializable {
 
